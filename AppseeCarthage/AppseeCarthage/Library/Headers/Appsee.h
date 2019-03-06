@@ -1,6 +1,6 @@
 //
 //  Appsee.h
-//  Appsee v2.4.6
+//  Appsee v2.5.0
 //
 //  Copyright (c) 2018 Shift 6 Ltd. All rights reserved.
 //
@@ -22,7 +22,7 @@
     To use, simply call 'start:' in your 'applicationDidFinishLaunching:withOptions:' method. 
  *******************************************************************************************/
 
-@interface Appsee: NSObject
+@interface AppseeWireframes: NSObject
 
 /***************
  General Control
@@ -212,6 +212,7 @@ This method should be usually called right after the start: method.
  */
 +(void)setDelegate:(id<AppseeDelegate>)delegate;
 
+
 @end
 
 
@@ -236,3 +237,5 @@ This method should be usually called right after the start: method.
 -(NSString *)appseeScreenDetected:(NSString *)screenName;
 
 @end
+
+@compatibility_alias Appsee AppseeWireframes;
